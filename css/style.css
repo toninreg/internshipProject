@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --starbucksGreen: #006341;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.linha {
+    background-color: var(--starbucksGreen);
+    height: 30px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.cabecalhoEsquerda {
+    display: flex;
+    flex: 1;
+}
+
+.cabecalhoEsquerda img {
+    width: 65px;
+    height: 65px;
+}
+
+.cabecalhoDireita {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa form {
+    display: flex;
+}
+
+.pesquisa input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    width: 260px;
+}
+
+.pesquisa button {
+    background: transparent;
+    border: 0;
+    margin: -30px;
+    cursor: pointer;
+}
+
+.pesquisa button img, .menu img {
+    width: 25px;
+    height: 25px;
+}
+
+.menu {
+    margin-left: 100px;
+    display: flex;
+    cursor: pointer;
+}
+
+.banner {
+    background-image: url("../assets/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.banner h1 {
+    font-size: 7rem;
+    line-height: 7rem;
+    margin-bottom: 35px;
+}
+
+.bebidas {
+    margin-top: 40px;
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bebidas img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid var(--starbucksGreen);
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.bebidas span {
+    margin-top: 20px;
+    padding-right: 40px;
+    font-size: 1.2rem;
+    text-align: center; 
+}
+
+.areaLadyGaga {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.conteudoLadyGaga {
+    padding: 50px 250px;
+}
+
+.barra {
+    background-color: var(--starbucksGreen);
+    width: 170px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+}
+
+.fala {
+    margin-bottom: 42px;
+}
+
+.textoLadyGaga {
+    line-height: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.botoes {
+    border: 2px solid #5e5e5e;
+    padding: 10px 30px;
+    color: #5e5e5e;
+    text-decoration: none;
+}
+
+.botoes:hover {
+    color: #fff;
+    background-color: #5e5e5e;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+.conteudoModal {
+    background-color: #ccc;
+    margin: 25% auto;
+    padding: 30px;
+    border: 5px solid var(--starbucksGreen);
+    width: 80%;
+}
+
+.fechar {
+    color: var(--starbucksGreen);
+    float: right;
+    font-size: 2rem;
+}
+
+.fechar:hover, .fechar:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.grid2-1-1 {
+    background-image: url("../assets/f2.jpg");
+    height: 500px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.grid2-1-2 {
+    background-image: url("../assets/f1.jpg");
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-position: center center;
+    background-size: cover;
+}
+
+.areaApresentacao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.apresentacaoConteudo {
+    padding: 50px 200px;
+}
+
+.apresentacaoTexto {
+    margin: 40px 0px;
+    line-height: 1.8rem;
+}
+
+.grid1-2-1 {
+    background-image: url("../assets/f4.jpg");
+    height: 500px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.grid1-2-2 {
+    background-image: url("../assets/f3.jpg");
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-position: center center;
+    background-size: cover;
+}
+
+.areaNovidade {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.novidadeConteudo {
+    background-image: url("../assets/bg2.jpg");
+    padding: 200px 100px;
+    background-size: cover;
+}
+
+.novidadeTexto {
+    margin: 40px 0px;
+    line-height: 1.8rem;
+}
+
+.novidadeImagem {
+    background-image: url("../assets/f5.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.areaCopos {
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    background-color: #e8e9ee;
+}
+
+.conteudoCopos {
+    max-width: 1200px;
+    margin-left: 100px;
+    padding: 140px;
+}
+
+.textoCopos {
+    margin-bottom: 60px;
+    line-height: 1.5rem;
+}
+
+.imagemCopos {
+    background-image: url("../assets/bg3.jpg");
+    max-width: 1000px;
+    background-position: center center;
+}
+
+.areaImagem {
+    background-image: url("../assets/bg4.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+@media (min-width:851px) and (max-width: 1140px) {
+    .container {
+        padding: 0px 30px;
+    }
+
+    .container span {
+        font-size: 1rem;
+    }
+
+    .conteudoLadyGaga, .apresentacaoConteudo {
+        padding: 30px;
+    }
+
+    .novidadeConteudo {
+        padding: 100px 30px;
+    }
+
+    .areaCopos {
+        grid-template-columns: 550px 1fr;
+    }
+
+    .conteudoCopos {
+        padding: 50px;
+    }
+
+    .imagemCopos {
+        background-position: left;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 850px) {
+    .container {
+        padding: 0px 20px;
+    }
+
+    .container span {
+        font-size: 0.9rem;
+    }
+
+    .conteudoLadyGaga, .apresentacaoConteudo {
+        padding: 20px;
+    }
+
+    .areaLadyGaga {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .conteudoLadyGaga {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .areaApresentacao {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .apresentacaoConteudo {
+        margin: 30px 0px;
+    }
+
+    .areaNovidade {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .apresentacaoConteudo {
+        padding: 150px 30px;
+    }
+
+    .areaCopos {
+        grid-template-columns: 400px 1fr;
+    }
+
+    .conteudoCopos {
+        padding: 30px;
+    }
+
+    .imagemCopos {
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+@media (max-width:425px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2.0rem;
+    }
+
+    .cabecalho {
+        justify-content: space-around;
+    }
+
+    .cabecalhoEsquerda {
+        flex: none;
+    }
+
+    .menu {
+        margin-left: 40px;
+    }
+
+    .pesquisa input {
+        max-width: 150px;
+    }
+
+    .banner {
+        padding: 50px 5px 5px 5px;
+        background-position: center center;
+
+    }
+
+    .banner h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .banner span {
+        display: flex;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .bebidas {
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bebidas img {
+        border: 5px solid var(--starbucksGreen);
+        border-radius: 50%;
+        margin: 10px;
+    }
+
+    .areaLadyGaga, .areaApresentacao, .areaCopos {
+        grid-template-columns: 1fr;
+    }
+
+    .grid2-1-1 {
+        height: 270px;
+    }
+
+    .areaNovidade {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .novidadeImagem {
+        background-position: center;
+    }
+
+    .areaImagem {
+        height: 300px;
+    }
+}
